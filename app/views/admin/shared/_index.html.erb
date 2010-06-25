@@ -1,0 +1,12 @@
+<% if collection.length > 0 -%>
+	<ul>
+		<% collection.each do |object| -%>
+			<li><%= object.title %></li>
+		<% end -%>
+	</ul>
+<% else -%>
+	<p>No <%= resource_class.name.underscore.humanize.downcase.pluralize %> created!</p>
+<% end -%>
+
+
+<%= link_to "Add #{resource_class.name.underscore.humanize.downcase}", new_resource_url %>

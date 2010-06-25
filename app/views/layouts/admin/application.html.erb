@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mongo CMS</title>
+	</head>
+	<body>	
+		<% if flash[:notice] %>
+		  <div class="notice"><%= flash[:notice] %></div>
+		<% end %>
+		<% if flash[:alert] %>
+		  <div class="alert"><%= flash[:alert] %></div>
+		<% end %>
+		<%= yield %>
+	</body>
+
+
+</html>

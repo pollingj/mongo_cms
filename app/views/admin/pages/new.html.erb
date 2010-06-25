@@ -1,0 +1,35 @@
+<h1>Pages</h1>
+ 
+<% semantic_form_for [:admin, @page] do |f| %>
+	<% f.inputs :name => "Basic" do %>
+  		<%= f.input :title %>
+		<%= f.input :slug %>
+		<%= f.commit_button "Create page" %>
+	<% end %>
+<% end %>
+
+
+<script type="text/javascript">
+function string_to_slug(str) {
+  str = str.replace(/^\s+|\s+$/g, ''); // trim
+  
+  // remove accents, swap ñ for n, etc
+  var from = "ÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛàáäâèéëêìíïîòóöôùúüûÑñÇç·/_,:;";
+  var to   = "aaaaeeeeiiiioooouuuuaaaaeeeeiiiioooouuuunncc------";
+  for (var i=0, l=from.length ; i<l ; i++) {
+    str = str.replace(new RegExp(from[i], "g"), to[i]);
+  }
+
+  str = str.replace(/[^a-zA-Z0-9 -]/g, '') // remove invalid chars
+    .replace(/\s+/g, '-') // collapse whitespace and replace by -
+    .toLowerCase();
+  return str;
+}
+
+var title = document.getElementById('page_title')
+var slug =  document.getElementById('page_slug')
+title.onkeyup = function()
+{
+	slug.value = string_to_slug(title.value);
+}
+</script>

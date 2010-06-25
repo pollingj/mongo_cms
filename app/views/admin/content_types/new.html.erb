@@ -1,0 +1,8 @@
+<h1>Content Types</h1>
+ 
+<% semantic_form_for [:admin, @content_type] do |f| %>
+	<% f.inputs :name => "Basic" do %>
+  		<%= f.input :title %>
+		<%= f.commit_button "Create content type" %>
+	<% end %>
+<% end %>
