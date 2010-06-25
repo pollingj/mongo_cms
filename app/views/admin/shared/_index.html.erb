@@ -1,7 +1,12 @@
 <% if collection.length > 0 -%>
 	<ul>
 		<% collection.each do |object| -%>
-			<li><%= object.title %></li>
+			<li>
+				<%= object.title %>
+				<ul class="actions">
+					<li><%= link_to "Edit", edit_resource_path(object) %></li>
+				</ul>
+			</li>
 		<% end -%>
 	</ul>
 <% else -%>
@@ -9,4 +14,4 @@
 <% end -%>
 
 
-<%= link_to "Add #{resource_class.name.underscore.humanize.downcase}", new_resource_url %>
+<%= link_to "Add #{resource_class.name.underscore.humanize.downcase}", new_resource_path %>

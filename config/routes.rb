@@ -2,7 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin| 
     admin.resources :users
     admin.resources :pages
-    admin.resources :content_types
+    admin.resources :content_types, :has_many => :content_blocks
     admin.resources :assets
     admin.resource :user_session
   end

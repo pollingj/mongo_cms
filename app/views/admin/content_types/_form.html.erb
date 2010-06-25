@@ -1,0 +1,6 @@
+<% semantic_form_for [:admin, @content_type] do |f| %>
+	<% f.inputs :name => "Basic" do %>
+  		<%= f.input :title %>
+		<%= f.commit_button "#{@content_type.title == nil ? "Create" : "Edit"} content type" %>
+	<% end %>
+<% end %>
