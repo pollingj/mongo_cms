@@ -36,3 +36,14 @@ Feature: Manage content type
 		Then I should be on the admin content types page
 		And I should see "Content type updated successfully!"
 		And I should see "Special Events"
+		
+	#Scenario: Destroy content type
+#		Given I am an authenticated user
+#		And a content type exists with title: "Events"
+#		And I am on the admin content types page
+#		When I follow "Delete"
+#		Then I should see "Are you certain you wish to delete the Events content type?"
+#		When I press "Delete content type"
+#		Then I should be on the admin content types page
+#		And I should not see "Events"
+#		And I should see "Content type deleted!"

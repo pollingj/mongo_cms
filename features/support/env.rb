@@ -13,6 +13,8 @@ require 'cucumber/rails/world'
 require 'cucumber/rails/active_record'
 require 'cucumber/web/tableish'
 
+require 'be_valid_asset'
+
 require 'capybara/rails'
 require 'capybara/cucumber'
 require 'capybara/session'
@@ -22,7 +24,7 @@ require 'cucumber/rails/capybara_javascript_emulation' # Lets you click links wi
 # prefer to use XPath just remove this line and adjust any selectors in your
 # steps to use the XPath syntax.
 Capybara.default_selector = :css
-Capybara.javascript_driver = :culerity
+#Capybara.javascript_driver = :culerity
 # If you set this to false, any error raised from within your app will bubble 
 # up to your step definition and out to cucumber unless you catch it somewhere
 # on the way. You can make Rails rescue errors and render error pages on a
@@ -33,6 +35,10 @@ Capybara.javascript_driver = :culerity
 # default production environment. It's not recommended to do this for all
 # of your scenarios, as this makes it hard to discover errors in your application.
 ActionController::Base.allow_rescue = false
+
+BeValidAsset::Configuration.enable_caching = true
+BeValidAsset::Configuration.cache_path = File.join(RAILS_ROOT, %w(tmp be_valid_asset_cache))
+
 
 # If you set this to true, each scenario will run in a database transaction.
 # You can still turn off transactions on a per-scenario basis, simply tagging 

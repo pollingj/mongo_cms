@@ -1,11 +1,12 @@
 <h1>Pages</h1>
  
-<% semantic_form_for [:admin, @page] do |f| %>
-	<% f.inputs :name => "Basic" do %>
+<% simple_form_for [:admin, @page] do |f| %>
+	<fieldset>
+		<legend>Page Creation</legend>
   		<%= f.input :title %>
 		<%= f.input :slug %>
-		<%= f.commit_button "Create page" %>
-	<% end %>
+		<%= f.button :submit, "Create page" %>
+	</fieldset>
 <% end %>
 
 

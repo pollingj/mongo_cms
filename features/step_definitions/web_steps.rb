@@ -8,6 +8,7 @@
 require 'uri'
 require 'cgi'
 require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
+include BeValidAsset
 
 module WithinHelpers
   def with_scope(locator)
@@ -18,10 +19,12 @@ World(WithinHelpers)
 
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
+  page.body.should be_valid_xhtml if ENV['VALIDATEHTML']
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
   visit path_to(page_name)
+  page.body.should be_valid_xhtml if ENV['VALIDATEHTML']
 end
 
 When /^(?:|I )press "([^"]*)"(?: within "([^"]*)")?$/ do |button, selector|

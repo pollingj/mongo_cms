@@ -33,6 +33,5 @@ Scenario: User can successfully login and redirect to the page they tried to acc
 	When I fill in "Username" with "John Polling"
 	And I fill in "Password" with "password"
 	And I press "Login"
-	Then I should be on the admin assets page
-	And I should see "Login successful!"
-	
+  Then I should be on the admin assets page
+  And I should see "Login successful!"

@@ -1,6 +1,7 @@
-<% semantic_form_for [:admin, @content_type] do |f| %>
-	<% f.inputs :name => "Basic" do %>
+<% simple_form_for [:admin, @content_type] do |f| %>
+	<fieldset>
+		<legend>Content Type</legend>
   		<%= f.input :title %>
-		<%= f.commit_button "#{@content_type.title == nil ? "Create" : "Edit"} content type" %>
-	<% end %>
+		<%= f.button :submit, "#{@content_type.title == nil ? "Create" : "Edit"} content type" %>
+	</fieldset>
 <% end %>
