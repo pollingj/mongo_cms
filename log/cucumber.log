@@ -54691,3 +54691,326 @@ Rendering template within layouts/admin/application
 Rendering admin/pages/index
 Rendered admin/shared/_index (2.2ms)
 Completed in 16ms (View: 4 | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:50) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 203ms (View: 198 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:50) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/pages
+Completed in 10ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:50) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (2.1ms)
+Completed in 68ms (View: 4 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 9ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:51) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"incorrect"}}
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 16ms (View: 9 | 200 OK [http://www.example.com/admin/user_session]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 9ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:51) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John", "password"=>"password"}}
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 13ms (View: 9 | 200 OK [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Redirected to http://www.example.com/admin/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms | 302 Found [http://www.example.com/admin/pages]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 9ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::AssetsController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Redirected to http://www.example.com/admin/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms | 302 Found [http://www.example.com/admin/assets]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 9ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:51) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/assets
+Completed in 10ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::AssetsController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/assets/index
+Completed in 76ms (View: 1 | 200 OK [http://www.example.com/admin/assets]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 8ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:51) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/pages
+Completed in 10ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.1ms)
+Completed in 11ms (View: 2 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::ContentTypesController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/content_types/index
+Rendered admin/shared/_index (2.3ms)
+Completed in 15ms (View: 4 | 200 OK [http://www.example.com/admin/content_types]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 9ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:51) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/pages
+Completed in 11ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.1ms)
+Completed in 11ms (View: 3 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::ContentTypesController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/content_types/index
+Rendered admin/shared/_index (1.1ms)
+Completed in 11ms (View: 2 | 200 OK [http://www.example.com/admin/content_types]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 9ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:51) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/pages
+Completed in 10ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.1ms)
+Completed in 11ms (View: 2 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::ContentTypesController#index (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/content_types/index
+Rendered admin/shared/_index (1.2ms)
+Completed in 12ms (View: 3 | 200 OK [http://www.example.com/admin/content_types]
+
+
+Processing Admin::ContentTypesController#new (for 127.0.0.1 at 2010-08-07 23:07:51) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/content_types/new
+Rendered admin/content_types/_form (4.9ms)
+Completed in 144ms (View: 7 | 200 OK [http://www.example.com/admin/content_types/new]
+
+
+Processing Admin::ContentTypesController#create (for 127.0.0.1 at 2010-08-07 23:07:52) [POST]
+  Parameters: {"commit"=>"Create content type", "content_type"=>{"title"=>"News"}}
+Redirected to http://www.example.com/admin/content_types/4c5dd9380bdb82b07b00000a
+Completed in 10ms | 302 Found [http://www.example.com/admin/content_types]
+
+
+Processing Admin::ContentTypesController#show (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+  Parameters: {"id"=>"4c5dd9380bdb82b07b00000a"}
+Rendering template within layouts/admin/application
+Rendering admin/content_types/show
+Completed in 10ms (View: 2 | 200 OK [http://www.example.com/admin/content_types/4c5dd9380bdb82b07b00000a]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 8ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:52) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/pages
+Completed in 10ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.1ms)
+Completed in 11ms (View: 2 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::ContentTypesController#index (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/content_types/index
+Rendered admin/shared/_index (1.9ms)
+Completed in 148ms (View: 4 | 200 OK [http://www.example.com/admin/content_types]
+
+
+Processing Admin::ContentTypesController#edit (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+  Parameters: {"id"=>"4c5dd9380bdb82b07b00000c"}
+Rendering template within layouts/admin/application
+Rendering admin/content_types/edit
+Rendered admin/content_types/_form (6.2ms)
+Completed in 32ms (View: 14 | 200 OK [http://www.example.com/admin/content_types/4c5dd9380bdb82b07b00000c/edit]
+
+
+Processing Admin::ContentTypesController#update (for 127.0.0.1 at 2010-08-07 23:07:52) [PUT]
+  Parameters: {"commit"=>"Edit content type", "content_type"=>{"title"=>"Special Events"}, "id"=>"4c5dd9380bdb82b07b00000c"}
+Redirected to http://www.example.com/admin/content_types
+Completed in 16ms | 302 Found [http://www.example.com/admin/content_types/4c5dd9380bdb82b07b00000c]
+
+
+Processing Admin::ContentTypesController#index (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/content_types/index
+Rendered admin/shared/_index (1.8ms)
+Completed in 13ms (View: 3 | 200 OK [http://www.example.com/admin/content_types]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 10ms (View: 9 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:52) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/pages
+Completed in 10ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (2.3ms)
+Completed in 13ms (View: 4 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.7ms)
+Completed in 12ms (View: 3 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 9ms (View: 8 | 200 OK [http://www.example.com/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:07:52) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://www.example.com/admin/pages
+Completed in 10ms | 302 Found [http://www.example.com/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.1ms)
+Completed in 11ms (View: 3 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:07:52) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.5ms)
+Completed in 146ms (View: 3 | 200 OK [http://www.example.com/admin/pages]
+
+
+Processing Admin::UserSessionsController#new (for 127.0.0.1 at 2010-08-07 23:08:09) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/user_sessions/new
+Completed in 87ms (View: 21 | 200 OK [http://localhost/admin/user_session/new]
+
+
+Processing Admin::UserSessionsController#create (for 127.0.0.1 at 2010-08-07 23:08:10) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"John Polling", "password"=>"password"}}
+Redirected to http://localhost:9887/admin/pages
+Completed in 12ms | 302 Found [http://localhost/admin/user_session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:08:10) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (1.6ms)
+Completed in 13ms (View: 3 | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:08:10) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (3.1ms)
+Completed in 69ms (View: 6 | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2010-08-07 23:08:11) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/new
+Completed in 20ms (View: 10 | 200 OK [http://localhost/admin/pages/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2010-08-07 23:08:13) [POST]
+  Parameters: {"commit"=>"Create page", "page"=>{"slug"=>"home-page", "title"=>"Home Page"}}
+Redirected to http://localhost:9887/admin/pages
+Completed in 19ms | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2010-08-07 23:08:13) [GET]
+Rendering template within layouts/admin/application
+Rendering admin/pages/index
+Rendered admin/shared/_index (2.0ms)
+Completed in 20ms (View: 4 | 200 OK [http://localhost/admin/pages]
